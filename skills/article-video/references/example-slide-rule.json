@@ -1,0 +1,106 @@
+{
+  "title": "The Slide Rule Guide",
+  "source": "https://maherou.github.io/files/papers/2025-09-10-The-Slide-Rule-Guide-Heroux.pdf",
+  "scenes": [
+    {
+      "type": "title",
+      "icon": "slide_rule",
+      "title": "The Slide Rule Guide",
+      "subtitle": "If, when, and how to use generative AI tools for education",
+      "byline": "Ideas from an essay by Michael Heroux",
+      "narration": "Hi, I'm Mike Heroux. This is The Slide Rule Guide: some ideas for if, when, and how to use generative AI tools in education."
+    },
+    {
+      "type": "compare",
+      "heading": "A familiar analogy",
+      "items": [
+        {"icon": "pencil", "title": "Paper and pencil", "body": "Learn arithmetic by hand", "cue": "paper and pencil"},
+        {"icon": "calculator", "title": "Calculator", "body": "Then use the tool to solve problems", "cue": "then they use a calculator"}
+      ],
+      "footer": {"text": "Foundations first. Tools after.", "cue": "solving real problems"},
+      "narration": "We often compare paper and pencil to the calculator. We want students to learn arithmetic by hand first. Then they use a calculator as a tool for solving real problems."
+    },
+    {
+      "type": "statement",
+      "heading": "Now add a third item",
+      "lines": [
+        {"text": "The slide rule", "style": "accent", "cue": "the slide rule"},
+        {"text": "For three centuries, the best calculating tool there was.", "style": "body", "cue": "for more than three centuries"},
+        {"text": "Then, in the 1970s, calculators arrived. Within a few years it was gone.", "style": "warn", "cue": "then in the 1970s"}
+      ],
+      "icon": "slide_rule",
+      "narration": "I want to add a third item: the slide rule. For more than three centuries, it was the best calculating tool available. Then, in the 1970s, calculators arrived, and within a few years the slide rule was gone."
+    },
+    {
+      "type": "statement",
+      "icon": "calculator",
+      "lines": [
+        {"text": "Generative AI tools are", "style": "body", "gap": 0.1},
+        {"text": "the new calculators.", "style": "emph", "cue": "the new calculators"},
+        {"text": "They make some — but not all — of our teaching and learning approaches", "style": "body", "cue": "they make some"},
+        {"text": "the equivalent of a slide rule.", "style": "accent", "cue": "the equivalent of a slide rule"}
+      ],
+      "narration": "I believe generative AI tools are the new calculators. They make some, but not all, of our approaches to teaching and learning the equivalent of a slide rule."
+    },
+    {
+      "type": "cards",
+      "heading": "The educator's job: choose the right tool",
+      "items": [
+        {"icon": "pencil", "title": "Paper & pencil", "body": "when it builds foundational skills", "tone": "good", "cue": "like paper and pencil"},
+        {"icon": "calculator", "title": "Calculator", "body": "when the tool serves the learning", "tone": "good", "cue": "like a calculator"},
+        {"icon": "slide_rule", "title": "Slide rule", "body": "never — obsolete effort, not learning", "tone": "bad", "cue": "never like a slide rule", "strike": true}
+      ],
+      "footer": {"text": "Like paper and pencil, or like a calculator — but not like a slide rule."},
+      "narration": "Our challenge as educators is to make our approaches like paper and pencil when students need to build foundational skills. They should be like a calculator when the tool serves the learning, but never like a slide rule."
+    },
+    {
+      "type": "list",
+      "heading": "What does “slide rule” work look like?",
+      "items": [
+        {"text": "Manually summarizing large bodies of text", "cue": "summarizing large bodies"},
+        {"text": "Generating repetitive code structures", "cue": "writing repetitive code"},
+        {"text": "Composing boilerplate reports", "cue": "composing boilerplate reports"}
+      ],
+      "strike": {"cue": "were required because"},
+      "footer": [
+        {"text": "Required not because the process was valuable,", "cue": "no faster way"},
+        {"text": "but because there was no faster way to get the result."}
+      ],
+      "narration": "Many of our assignments, such as summarizing large bodies of text, writing repetitive code, or composing boilerplate reports, were required because there was no faster way to get the result. The process itself was not what mattered."
+    },
+    {
+      "type": "numbered",
+      "heading": "Two risks for educators",
+      "items": [
+        {"title": "Permitting too much", "body": "Allowing AI as a calculator when paper and pencil is required",
+         "result": "Students miss fundamentals they need for life after college", "cue": "first we permit", "result_cue": "they miss the fundamentals"},
+        {"title": "Prohibiting too much", "body": "Banning AI where it would accelerate learning and productivity",
+         "result": "Students get a slide rule when they need a calculator", "cue": "second we prohibit", "result_cue": "we hand students a slide rule"}
+      ],
+      "narration": "In my experience, we run two risks. First, we permit these tools when students need paper and pencil, and they miss the fundamentals. Second, we prohibit them when they would accelerate learning, and we hand students a slide rule when they need a calculator."
+    },
+    {
+      "type": "pills",
+      "heading": "The real challenge",
+      "left": {"title": "Exercises that build essential understanding", "body": "Like learning arithmetic by hand. Keep them.", "tone": "good", "cue": "keep the exercises"},
+      "right": {"title": "Obsolete workflows", "body": "Replace or enhance them by focusing students on what they do with AI output:", "tone": "bad", "cue": "for the obsolete workflows"},
+      "pills": [
+        {"text": "interpretation", "cue": "interpretation"},
+        {"text": "creativity", "cue": "creativity"},
+        {"text": "critical thinking", "cue": "critical thinking"}
+      ],
+      "narration": "So the real work is to tell the difference. We should keep the exercises that build essential understanding. For the obsolete workflows, we should redirect students toward interpretation, creativity, and critical thinking about what the AI produces."
+    },
+    {
+      "type": "closer",
+      "icons": ["pencil", "calculator", {"icon": "slide_rule", "strike": true}],
+      "lines": [
+        {"text": "Pencil when it builds.", "tone": "good", "cue": "pencil when it builds"},
+        {"text": "Calculator when it serves.", "tone": "good", "cue": "calculator when it serves"},
+        {"text": "Never a slide rule.", "tone": "bad", "cue": "never a slide rule"}
+      ],
+      "footer": "Read the essay: maherou.github.io  ·  “The Slide Rule Guide” (Heroux, 2025)",
+      "narration": "Pencil when it builds. Calculator when it serves. Never a slide rule."
+    }
+  ]
+}

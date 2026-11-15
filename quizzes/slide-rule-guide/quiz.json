@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "generated_by": "article-quiz skill v0.1",
+  "generated_on": "2026-11-13",
+  "paper": {
+    "title": "The Slide Rule Guide: Ideas for If, When, and How to Use Generative AI Tools for Education",
+    "authors": ["Michael A. Heroux"],
+    "doi": "10.5281/zenodo.24027009",
+    "pdf_url": "https://zenodo.org/records/24027009/files/Heroux_2026_Slide-Rule-Guide_v1.0.pdf",
+    "video_url": "https://www.youtube.com/shorts/qbL50ds6Nlo"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "theme": "Generative AI tools as the new calculators",
+      "prompt": "In the essay's three-tool analogy, what do generative AI tools represent for the educational community?",
+      "choices": [
+        {"id": "a", "text": "A new kind of paper-and-pencil exercise that builds foundational skills", "correct": false},
+        {"id": "b", "text": "The new calculators, which make some, but not all, existing approaches to teaching the equivalent of a slide rule", "correct": true},
+        {"id": "c", "text": "The new slide rules, which students should be steered away from", "correct": false},
+        {"id": "d", "text": "A temporary trend that will pass once students lose interest", "correct": false}
+      ],
+      "explanation": "This probes the essay's central framing. Generative AI plays the role the calculator once did, and it turns some, but not all, existing activities into slide rules; the AI itself is not the slide rule.",
+      "quote": "For the educational community, I believe generative AI tools represent the new calculators that make some, but not all, of our existing approaches to learning and teaching the equivalent of a slide rule.",
+      "location": "Three Tools, Not Two (p. 2)"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "theme": "What makes an activity a slide rule",
+      "prompt": "Why, according to the essay, did many educational activities require labor-intensive steps before generative AI arrived?",
+      "choices": [
+        {"id": "a", "text": "Because accreditation standards required a minimum amount of manual work", "correct": false},
+        {"id": "b", "text": "Because the steps themselves built essential understanding, like learning arithmetic by hand", "correct": false},
+        {"id": "c", "text": "Because there was no faster or more efficient way to obtain the result", "correct": true},
+        {"id": "d", "text": "Because students preferred hands-on work to using tools", "correct": false}
+      ],
+      "explanation": "A slide-rule activity is one whose steps were required by the limits of available technology, not by their teaching value. Steps that build understanding are the paper-and-pencil case, which the essay treats separately.",
+      "quote": "not because the process itself was inherently valuable, but because there was no faster or more efficient way to obtain the result.",
+      "location": "When Activities Become Slide Rules (p. 2)"
+    },
+    {
+      "id": "q3",
+      "type": "multi",
+      "theme": "Examples of slide-rule activities",
+      "prompt": "Which of these does the essay give as examples of labor-intensive steps that students were required to perform? Select all that apply.",
+      "choices": [
+        {"id": "a", "text": "Manually summarizing large bodies of text", "correct": true},
+        {"id": "b", "text": "Learning arithmetic by hand", "correct": false},
+        {"id": "c", "text": "Generating repetitive code structures", "correct": true},
+        {"id": "d", "text": "Composing boilerplate reports", "correct": true}
+      ],
+      "explanation": "The essay names three kinds of labor-intensive work that existed because there was no faster method. Learning arithmetic by hand is its example of work that does build essential understanding.",
+      "quote": "These activities often required students to perform labor-intensive steps—such as manually summarizing large bodies of text, generating repetitive code structures, or composing boilerplate reports",
+      "location": "When Activities Become Slide Rules (p. 2)"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "theme": "The cost of keeping slide-rule activities",
+      "prompt": "Now that generative AI can handle such tasks in seconds, what does the essay say about still requiring students to do them the old way?",
+      "choices": [
+        {"id": "a", "text": "It risks becoming the pedagogical equivalent of insisting they use a slide rule after calculators have become ubiquitous", "correct": true},
+        {"id": "b", "text": "It gives students the fundamentals they need for life after college", "correct": false},
+        {"id": "c", "text": "It is justified because AI output is usually lower in quality than student work", "correct": false},
+        {"id": "d", "text": "It should continue until AI tools become capable of doing these tasks", "correct": false}
+      ],
+      "explanation": "The question tests the essay's argument for redesign. The tools already do these tasks quickly and often at a higher baseline quality, so keeping the old method is like keeping the slide rule after calculators are everywhere.",
+      "quote": "Today, with generative AI tools capable of handling these tasks in seconds and often at a higher baseline quality, continuing to require students to complete them in the old way risks becoming the pedagogical equivalent of insisting they use a slide rule after calculators have become ubiquitous.",
+      "location": "When Activities Become Slide Rules (p. 2)"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "theme": "Risk one: permitting AI where hand work is needed",
+      "prompt": "The first risk the essay names is permitting generative AI as a calculator when a pencil-and-paper approach is needed. What does that cost students?",
+      "choices": [
+        {"id": "a", "text": "A slide rule when they need a calculator", "correct": false},
+        {"id": "b", "text": "The chance to produce work at a higher baseline quality", "correct": false},
+        {"id": "c", "text": "Access to the tools their future employers will expect them to use", "correct": false},
+        {"id": "d", "text": "The opportunity to learn fundamentals they need for life after college", "correct": true}
+      ],
+      "explanation": "Over-permitting skips the hand work that builds fundamentals. Being handed a slide rule when a calculator is needed is the opposite risk, which comes from over-prohibiting.",
+      "quote": "We permit the use of these tools as calculators when we should require a pencil-and-paper approach, missing the opportunity for students to learn fundamentals that they need for life after college.",
+      "location": "When Activities Become Slide Rules (p. 2)"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "theme": "Risk two: prohibiting AI where it is appropriate",
+      "prompt": "What is the second risk the essay names?",
+      "choices": [
+        {"id": "a", "text": "Permitting the tools when students should work by hand, so they miss fundamentals", "correct": false},
+        {"id": "b", "text": "Prohibiting the tools when they are appropriate, giving students a slide rule when they need a calculator", "correct": true},
+        {"id": "c", "text": "Using the tools to grade student work without reviewing the results", "correct": false},
+        {"id": "d", "text": "Teaching logarithms in place of practical computation", "correct": false}
+      ],
+      "explanation": "The essay's risks run in both directions. The second is over-prohibiting: banning tools that would accelerate learning and make students more productive.",
+      "quote": "We prohibit these tools when they are appropriate for accelerating learning and making students more productive, giving them a slide rule when they need a calculator as a tool for life after college.",
+      "location": "When Activities Become Slide Rules (p. 2)"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "theme": "Telling the cases apart",
+      "prompt": "The essay frames the educator's challenge as a distinction between two kinds of exercises. Which kind does it compare to learning arithmetic by hand?",
+      "choices": [
+        {"id": "a", "text": "Exercises that are now obsolete workflows", "correct": false},
+        {"id": "b", "text": "Exercises that can be graded automatically", "correct": false},
+        {"id": "c", "text": "Exercises that build essential understanding", "correct": true},
+        {"id": "d", "text": "Exercises that generate repetitive code structures", "correct": false}
+      ],
+      "explanation": "Arithmetic by hand stands for work worth keeping because it builds understanding. Obsolete workflows and repetitive code generation are the slide-rule side of the distinction.",
+      "quote": "Our challenge is to distinguish between exercises that build essential understanding—akin to learning arithmetic by hand—and those that are now obsolete workflows",
+      "location": "When Activities Become Slide Rules (p. 2)"
+    },
+    {
+      "id": "q8",
+      "type": "multi",
+      "theme": "Redesigning activities around AI output",
+      "prompt": "The essay says activities should be redesigned around which of the following? Select all that apply.",
+      "choices": [
+        {"id": "a", "text": "Interpretation", "correct": true},
+        {"id": "b", "text": "Memorization", "correct": false},
+        {"id": "c", "text": "Creativity", "correct": true},
+        {"id": "d", "text": "Critical thinking", "correct": true},
+        {"id": "e", "text": "Manual repetition", "correct": false}
+      ],
+      "explanation": "Once AI handles the slide-rule steps, the essay moves the instructional value to what students do with AI-generated output: interpret it, build on it creatively, and think critically about it.",
+      "quote": "The challenge is to distinguish these cases and redesign activities around interpretation, creativity, and critical thinking.",
+      "location": "Abstract (p. 1)"
+    }
+  ]
+}

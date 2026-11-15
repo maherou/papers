@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "generated_by": "article-quiz skill v0.1",
+  "generated_on": "2026-11-13",
+  "paper": {
+    "title": "Research Software Science: Expanding the Impact of Research Software Engineering",
+    "authors": ["Michael A. Heroux"],
+    "doi": "10.1109/MCSE.2023.3260475",
+    "pdf_url": "https://digitalcommons.csbsju.edu/csci_pubs/36/",
+    "video_url": "https://www.youtube.com/shorts/6gz3zvkkmmc"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "theme": "What research software science is",
+      "prompt": "How does the paper define research software science (RSS)?",
+      "choices": [
+        {"id": "a", "text": "A career path that gives research software engineers stable positions", "correct": false},
+        {"id": "b", "text": "Adapting practices from the mainstream software engineering literature for research teams", "correct": false},
+        {"id": "c", "text": "Applying the scientific method to understanding and improving how software is developed and used for research", "correct": true},
+        {"id": "d", "text": "Using research software to make new scientific discoveries", "correct": false}
+      ],
+      "explanation": "RSS makes the development and use of research software itself the subject of scientific study. Reading and adapting the software engineering literature is the translational work RSEs already do, which RSS complements.",
+      "quote": "research software science (RSS): applying the scientific method to understanding and improving how software is developed and used for research",
+      "location": "Introduction (p. 1 of the article)"
+    },
+    {
+      "id": "q2",
+      "type": "multi",
+      "theme": "What doing RSS involves",
+      "prompt": "According to the paper, understanding and improving software development and use through RSS involves which of these? Select all that apply.",
+      "choices": [
+        {"id": "a", "text": "Obtaining data to detect correlation", "correct": true},
+        {"id": "b", "text": "Refining repeated practices for more efficiency", "correct": false},
+        {"id": "c", "text": "Designing experiments to identify cause and effect", "correct": true},
+        {"id": "d", "text": "Publishing results for broad impact", "correct": true},
+        {"id": "e", "text": "Adopting published practices unchanged", "correct": false}
+      ],
+      "explanation": "RSS uses formal observation and experimentation to produce knowledge through repeatable and reproducible processes. Refining repeated practices for efficiency is how the paper characterizes the engineering view, and adopting practices unchanged is what it warns against.",
+      "quote": "Understanding and improving software development and use involves obtaining data to detect correlation, designing experiments to identify cause and effect, and publishing results for broad impact.",
+      "location": "Research Software Science: Definition (p. 3 of the article)"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "theme": "A perception that holds back investment",
+      "prompt": "What perception does the paper identify as a challenge to investing in better software practices for science?",
+      "choices": [
+        {"id": "a", "text": "That improving software skills falls under engineering, not science", "correct": true},
+        {"id": "b", "text": "That research software is too small to need any formal process", "correct": false},
+        {"id": "c", "text": "That scientists are unwilling to learn new tools", "correct": false},
+        {"id": "d", "text": "That mainstream best practices already fit research teams well", "correct": false}
+      ],
+      "explanation": "Because software improvement is seen as engineering, some believe a scientific research portfolio should not fund it as a fundamental element. RSS answers this by framing the work as science.",
+      "quote": "One challenge to investing in improved software practices and processes for science is the perception by some that a focus on improving software skills falls under the category of engineering, not science.",
+      "location": "Background (p. 2 of the article)"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "theme": "Why software engineering funding is hard to sustain",
+      "prompt": "What fundamental issue limits the ability of agencies such as NSF and DOE to provide sustained software engineering funding?",
+      "choices": [
+        {"id": "a", "text": "They have no programs aimed at software", "correct": false},
+        {"id": "b", "text": "Research software teams rarely apply for funding", "correct": false},
+        {"id": "c", "text": "Software products are already sustained by industry", "correct": false},
+        {"id": "d", "text": "They are primarily scientific agencies", "correct": true}
+      ],
+      "explanation": "The agencies do have software programs, such as NSF's CSSI and DOE's Exascale Computing Project, but as science agencies they are limited in funding engineering. Framing software improvement as science gives them clearer grounds to fund it.",
+      "quote": "the fundamental issue that NSF, DOE and others face is that they are primarily scientific agencies, limiting their abilities to provide sustained software engineering funding.",
+      "location": "Funding agencies and software engineering (p. 3 of the article)"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "theme": "The limits of borrowed best practices",
+      "prompt": "What does the paper say about best practices taken from larger, mainstream software domains?",
+      "choices": [
+        {"id": "a", "text": "They should be adopted unchanged to save time", "correct": false},
+        {"id": "b", "text": "They may be ill-suited for research software teams", "correct": true},
+        {"id": "c", "text": "They are mostly based on controlled experiments", "correct": false},
+        {"id": "d", "text": "They are only useful for very small teams", "correct": false}
+      ],
+      "explanation": "Learning practices from mainstream software engineering and using them with little adaptation has brought only moderate success. Much of that literature is anecdotal, which is part of why the paper wants research software studied scientifically.",
+      "quote": "Best practices distilled from larger, more mainstream software domains may be ill-suited for research software teams.",
+      "location": "Background (p. 2 of the article)"
+    },
+    {
+      "id": "q6",
+      "type": "multi",
+      "theme": "Three components of the pursuit",
+      "prompt": "The paper says applying science to research software has strong components of which kinds? Select all that apply.",
+      "choices": [
+        {"id": "a", "text": "Technical", "correct": true},
+        {"id": "b", "text": "Financial", "correct": false},
+        {"id": "c", "text": "Social", "correct": true},
+        {"id": "d", "text": "Cognitive", "correct": true},
+        {"id": "e", "text": "Legal", "correct": false}
+      ],
+      "explanation": "Many people recognize the technical component, but fewer focus on the social and cognitive ones, and fewer still study team interactions and individual concerns scientifically. That is why the paper calls for the social and cognitive sciences.",
+      "quote": "This pursuit has strong technical, social, and cognitive components.",
+      "location": "Science applied to research software (p. 3 of the article)"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "theme": "Scientists and engineers",
+      "prompt": "Which saying, attributed to Fred Brooks, does the paper use to contrast scientists and engineers?",
+      "choices": [
+        {"id": "a", "text": "\"Adding people to a late software project makes it later.\"", "correct": false},
+        {"id": "b", "text": "\"An engineer builds in order to learn; a scientist learns in order to build.\"", "correct": false},
+        {"id": "c", "text": "\"A scientist builds in order to learn; an engineer learns in order to build.\"", "correct": true},
+        {"id": "d", "text": "\"Scientists discover what is; engineers create what never was.\"", "correct": false}
+      ],
+      "explanation": "Engineers want a better tool or process, test a few options, pick the best, and move on. Scientists want underlying principles and cause and effect, and they publish. The reversed version is the near-miss.",
+      "quote": "A scientist builds in order to learn; an engineer learns in order to build.",
+      "location": "RSS not just an extension of RSE (p. 4 of the article)"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "theme": "Why RSS is more than an extension of RSE",
+      "prompt": "Why does the paper argue that RSS should be its own identifiable element, not just a modest extension of RSE?",
+      "choices": [
+        {"id": "a", "text": "RSE experimentation is seldom a formal, repeatable, or reproducible process designed to generate sharable knowledge", "correct": true},
+        {"id": "b", "text": "RSE teams never experiment with new tools or processes", "correct": false},
+        {"id": "c", "text": "RSS requires a separate organization outside RSE teams", "correct": false},
+        {"id": "d", "text": "RSE work cannot be funded by scientific agencies", "correct": false}
+      ],
+      "explanation": "RSE teams do experiment with new mental models, tools, and processes, so the paper grants some truth to the extension view. The difference is formal, reproducible study that produces shareable knowledge, and the paper places RSS inside an existing RSE organization.",
+      "quote": "this experimentation is seldom a formal, repeatable, or reproducible process designed to generate sharable knowledge.",
+      "location": "RSS not just an extension of RSE (p. 4 of the article)"
+    },
+    {
+      "id": "q9",
+      "type": "single",
+      "theme": "Trends that raise the value of RSS",
+      "prompt": "As AI-based tools reduce the cost of producing software, which skills does the paper expect to become relatively more important?",
+      "choices": [
+        {"id": "a", "text": "Low-level performance tuning", "correct": false},
+        {"id": "b", "text": "Writing code by hand quickly", "correct": false},
+        {"id": "c", "text": "Building parallel computers", "correct": false},
+        {"id": "d", "text": "Eliciting and analyzing requirements, and user-centered design", "correct": true}
+      ],
+      "explanation": "With the cost of making software falling and usability gaining emphasis, more time goes to deciding what the product should be. The paper sees RSS as a scientific foundation for this user-experience work.",
+      "quote": "skills in eliciting and analyzing requirements, and user-centered design become relatively more important than development skills.",
+      "location": "Trends in scientific software that increase the value of RSS (p. 6 of the article)"
+    }
+  ]
+}

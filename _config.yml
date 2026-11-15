@@ -1,0 +1,33 @@
+# Site settings. To make this site your own, change everything in this block.
+title: "Michael A. Heroux"
+heading: "Papers and Videos"
+intro: "My papers are archived on Zenodo with permanent DOIs. Each has a short pitch video on YouTube and a quiz you can take to check what you took away."
+description: "Papers by Michael A. Heroux, archived on Zenodo with permanent DOIs, with companion pitch videos and quizzes."
+home_label: "maherou.github.io"
+home_url: "https://maherou.github.io/"
+copyright: "2026 Michael A. Heroux"
+
+# Where the site is served. For a repo named `papers` under account `NAME`,
+# use url "https://NAME.github.io" and baseurl "/papers".
+url: "https://maherou.github.io"
+baseurl: "/papers"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - LICENSE-CONTENT
+  - skills
+  - vendor

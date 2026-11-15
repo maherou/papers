@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "generated_by": "article-quiz skill v0.1",
+  "generated_on": "2026-11-13",
+  "paper": {
+    "title": "A Better Lesson: Staying on the Right Side of Scale",
+    "authors": ["Michael A. Heroux"],
+    "doi": "10.5281/zenodo.24024225",
+    "pdf_url": "https://zenodo.org/records/24024225/files/Heroux_2026_A-Better-Lesson_v1.0.pdf",
+    "video_url": "https://www.youtube.com/shorts/Wdefbre9q38"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "theme": "Sutton's bitter lesson",
+      "prompt": "What was Rich Sutton's observation in \"The Bitter Lesson\"?",
+      "choices": [
+        {"id": "a", "text": "Algorithmic ingenuity, more than faster hardware, has produced the biggest gains in AI", "correct": false},
+        {"id": "b", "text": "General methods that scale with computation have repeatedly overtaken approaches built on encoded human knowledge", "correct": true},
+        {"id": "c", "text": "Carefully encoded expert knowledge eventually beats general methods once enough data is collected", "correct": false},
+        {"id": "d", "text": "AI research made little real progress in its first seventy years", "correct": false}
+      ],
+      "explanation": "The paper starts from Sutton's claim that search and learning, scaled with compute, keep beating hand-encoded expertise. The near-miss is Moshe Vardi's counterpoint about SAT solving, which the paper discusses next.",
+      "quote": "general methods that scale with computation, chiefly search and learning, have repeatedly overtaken approaches built on carefully encoded human knowledge.",
+      "location": "Overview (p. 1)"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "theme": "Sandcastles and boats",
+      "prompt": "In the paper's rising-tide picture, which of these is a sandcastle?",
+      "choices": [
+        {"id": "a", "text": "A kernel tuned for one generation of hardware", "correct": true},
+        {"id": "b", "text": "A regression suite with reference solutions", "correct": false},
+        {"id": "c", "text": "A performance-portable library", "correct": false},
+        {"id": "d", "text": "Documented design rationale", "correct": false}
+      ],
+      "explanation": "Sandcastles encode a solution by hand for a specific architecture or narrow problem, so rising compute and AI capability erode their worth. The other three choices are the paper's examples of boats, whose value grows as the tide rises.",
+      "quote": "A kernel tuned for one generation of hardware, a heuristic that replaces a search the machine could now perform, or tacit knowledge that lives only in a few experts’ heads all fall into this category.",
+      "location": "Two Kinds of Investment (p. 2)"
+    },
+    {
+      "id": "q3",
+      "type": "multi",
+      "theme": "Four principles for the right side of scale",
+      "prompt": "Which of these are among the paper's four principles for staying on the right side of scale? Select all that apply.",
+      "choices": [
+        {"id": "a", "text": "Build on what scales", "correct": true},
+        {"id": "b", "text": "Encode expert knowledge directly into solvers", "correct": false},
+        {"id": "c", "text": "Anchor in ground truth", "correct": true},
+        {"id": "d", "text": "Reserve people for judgment", "correct": true},
+        {"id": "e", "text": "Automate validation before verification", "correct": false}
+      ],
+      "explanation": "The four principles are build on what scales, anchor in ground truth, make knowledge legible, and reserve people for judgment. Encoding expert knowledge directly is the sandcastle strategy the paper cautions against, and validation is where it expects automation to lag.",
+      "quote": "We propose four principles for staying on the right side of scale: build on what scales, anchor in ground truth, make knowledge legible, and reserve people for judgment.",
+      "location": "Abstract (p. 1)"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "theme": "Ground truth as a strategic asset",
+      "prompt": "Under the paper's reading, what do test suites, reference solutions, validated datasets, and benchmarks become?",
+      "choices": [
+        {"id": "a", "text": "Quality overhead that AI tools will make unnecessary", "correct": false},
+        {"id": "b", "text": "Sandcastles that erode with each hardware generation", "correct": false},
+        {"id": "c", "text": "Strategic assets, because every new solution, human or AI, will be judged against them", "correct": true},
+        {"id": "d", "text": "A substitute for expert judgment about which problems matter", "correct": false}
+      ],
+      "explanation": "These are often treated as overhead, but whatever produces the next solver will be judged against them, so their value is likely to grow as more candidate solutions are generated.",
+      "quote": "Test suites, reference solutions, validated datasets, and benchmarks are often treated as quality overhead. Under this reading, they become strategic assets.",
+      "location": "Four Principles for the Right Side of Scale (p. 3)"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "theme": "Making knowledge legible",
+      "prompt": "Why does the paper urge organizations to make their knowledge legible?",
+      "choices": [
+        {"id": "a", "text": "So experts can hand-encode solutions more precisely", "correct": false},
+        {"id": "b", "text": "Because readable code runs faster on new hardware", "correct": false},
+        {"id": "c", "text": "So that test suites become less necessary", "correct": false},
+        {"id": "d", "text": "Because AI tools cannot recover intent that exists only in someone's memory", "correct": true}
+      ],
+      "explanation": "Much of a mature code's value lives in unwritten design decisions. Writing down intent lets AI amplify expertise rather than guess at it. The paper is explicit that this is not a return to hand-encoding solutions.",
+      "quote": "AI tools can read source code, documentation, and specifications, but they cannot recover intent that exists only in someone’s memory.",
+      "location": "Four Principles for the Right Side of Scale (p. 3)"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "theme": "Reinforcement learning needs a trustworthy signal",
+      "prompt": "Reinforcement learning depends on a reliable way to tell whether an attempt succeeded. What risk does the paper see in training against weak checks?",
+      "choices": [
+        {"id": "a", "text": "The system learns more slowly but reaches the same result", "correct": false},
+        {"id": "b", "text": "The system stops improving once it matches human experts", "correct": false},
+        {"id": "c", "text": "The system can learn to satisfy the checker without solving the problem", "correct": true},
+        {"id": "d", "text": "The system needs human games or examples to learn from", "correct": false}
+      ],
+      "explanation": "The quality of the success signal matters as much as its existence. A thin test suite produces misleading rewards, so thorough verification is what makes the learning worth trusting.",
+      "quote": "A system trained against weak checks can learn to satisfy the checker without solving the problem, so a thin test suite produces misleading rewards.",
+      "location": "Reinforcement Learning as the Linchpin (p. 4)"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "theme": "Verification versus validation",
+      "prompt": "Which pairing matches the paper's shorthand for verification and validation?",
+      "choices": [
+        {"id": "a", "text": "Verification: solving the right equations. Validation: solving the equations right.", "correct": false},
+        {"id": "b", "text": "Verification: solving the equations right. Validation: solving the right equations.", "correct": true},
+        {"id": "c", "text": "Verification: human code review. Validation: automated testing.", "correct": false},
+        {"id": "d", "text": "Verification: checking performance. Validation: checking portability.", "correct": false}
+      ],
+      "explanation": "Verification asks whether the code solves its mathematical model correctly; validation asks whether the model represents the physical world well enough for its intended use. The reversed pairing is the near-miss.",
+      "quote": "The common shorthand is that verification means solving the equations right, and validation means solving the right equations.",
+      "location": "Verification Versus Validation (p. 4)"
+    },
+    {
+      "id": "q8",
+      "type": "multi",
+      "theme": "Verification checks that computation can settle",
+      "prompt": "Which of these does the paper list as checks that produce the automatic, repeatable signal reinforcement learning needs? Select all that apply.",
+      "choices": [
+        {"id": "a", "text": "Manufactured solutions", "correct": true},
+        {"id": "b", "text": "Experimental and observational data", "correct": false},
+        {"id": "c", "text": "Convergence studies", "correct": true},
+        {"id": "d", "text": "Regression tests", "correct": true},
+        {"id": "e", "text": "Physical insight about model adequacy", "correct": false}
+      ],
+      "explanation": "Much of verification can be settled by computation, which makes code development gated by these checks a strong candidate for automation. Experimental data and physical insight belong to validation, which is harder to check automatically.",
+      "quote": "Manufactured solutions, convergence studies, conservation checks, regression tests, and comparisons against reference results all produce the automatic, repeatable signal reinforcement learning needs.",
+      "location": "Verification Versus Validation (p. 4)"
+    },
+    {
+      "id": "q9",
+      "type": "single",
+      "theme": "Where expert attention goes",
+      "prompt": "As AI absorbs more verification work, where does the paper expect expert attention to concentrate?",
+      "choices": [
+        {"id": "a", "text": "On validation: what a model must capture, what evidence is sufficient, and when a result can be trusted", "correct": true},
+        {"id": "b", "text": "On verification, because it is the hardest part of the work to automate", "correct": false},
+        {"id": "c", "text": "On hand-tuning kernels for each new hardware generation", "correct": false},
+        {"id": "d", "text": "On replacing reference datasets with AI-generated ones", "correct": false}
+      ],
+      "explanation": "Validation depends on scarce experimental data and judgment, so it is where the boundary of automation is likely to remain. That gives concrete meaning to reserving people for judgment.",
+      "quote": "As AI absorbs more verification work, expert attention is likely to concentrate on validation: deciding what a model must capture, what evidence is sufficient, and when a result is trustworthy enough to act on.",
+      "location": "Verification Versus Validation (p. 5)"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "theme": "A practical test for technical leaders",
+      "prompt": "What practical test does the paper offer technical leaders reviewing a software portfolio?",
+      "choices": [
+        {"id": "a", "text": "Ask whether each effort could be done by an AI agent today, and cancel any that could", "correct": false},
+        {"id": "b", "text": "Ask whether each effort makes the domain more verifiable, legible, or scalable, or encodes an answer a machine might find", "correct": true},
+        {"id": "c", "text": "Ask whether each effort has been optimized for the newest hardware generation", "correct": false},
+        {"id": "d", "text": "Ask whether each effort has been validated against experimental data", "correct": false}
+      ],
+      "explanation": "Efforts of the first kind ride the rising tide. Efforts that encode answers may still be worth doing, the paper says, but with clear eyes about their shelf life, which is why cancelling them outright is the near-miss.",
+      "quote": "for each major effort, ask whether it makes the domain more verifiable, more legible, or more scalable, or whether it encodes an answer that a future machine might find on its own.",
+      "location": "Implications and Outlook (p. 5)"
+    }
+  ]
+}

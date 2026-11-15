@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Take the Challenge</title>
+  <meta name="description" content="A short quiz on a paper.">
+  <link rel="stylesheet" href="player.css">
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Take the Challenge</span>
+    <span class="score" id="score" hidden aria-live="polite"></span>
+  </header>
+  <main id="app" class="app" tabindex="-1">
+    <p class="status">Loading quiz…</p>
+    <noscript><p class="status">This quiz needs JavaScript.</p></noscript>
+  </main>
+  <footer class="footer">
+    <a href="../">All papers</a>
+    <span class="footer-end">
+      <button type="button" class="about-link" id="about-open">About</button>
+      <span id="player-version"></span>
+    </span>
+  </footer>
+  <dialog class="about" id="about" aria-labelledby="about-title">
+    <div class="about-body">
+      <p id="about-title">© 2026 Michael A. Heroux</p>
+      <p>Code is MIT licensed. Everything else is CC BY 4.0.</p>
+      <p class="about-links">
+        <a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT License</a>
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+      </p>
+      <button type="button" class="btn secondary" id="about-close" autofocus>Close</button>
+    </div>
+  </dialog>
+</body>
+</html>

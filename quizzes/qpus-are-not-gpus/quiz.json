@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "generated_by": "article-quiz skill v0.1",
+  "generated_on": "2026-11-13",
+  "paper": {
+    "title": "QPUs Are Not GPUs: Why Quantum Processors Need Constant Classical Control",
+    "authors": ["Michael A. Heroux"],
+    "doi": "10.5281/zenodo.24028100",
+    "pdf_url": "https://zenodo.org/records/24028100/files/Heroux_2026_QPUs-Are-Not-GPUs_v1.0.pdf",
+    "video_url": "https://www.youtube.com/shorts/qJzObldTwzU"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "theme": "Where QPUs fit in scientific computing",
+      "prompt": "Where does the paper see the strongest case for quantum computing in science?",
+      "choices": [
+        {"id": "a", "text": "Simulating quantum systems themselves, such as molecules, materials, and catalysts", "correct": true},
+        {"id": "b", "text": "Combinatorial optimization at practical problem sizes", "correct": false},
+        {"id": "c", "text": "Solving large linear systems for typical scientific workloads", "correct": false},
+        {"id": "d", "text": "Climate and weather modeling", "correct": false}
+      ],
+      "explanation": "Using a quantum device to model a quantum system has the clearest theoretical grounding, though advantage has not yet been shown on physically relevant problems. The paper calls optimization contested and quantum linear algebra narrow.",
+      "quote": "The strongest case is simulating quantum systems themselves: the electronic structure of molecules and materials, catalysts and battery chemistry, and strongly correlated physical systems",
+      "location": "2 Where Quantum Processors Fit in Scientific Computing (p. 2)"
+    },
+    {
+      "id": "q2",
+      "type": "multi",
+      "theme": "Workloads where QPUs are not a consideration",
+      "prompt": "For which of these workloads does the paper say QPUs are not a practical consideration on any planning horizon visible today? Select all that apply.",
+      "choices": [
+        {"id": "a", "text": "Computational fluid dynamics", "correct": true},
+        {"id": "b", "text": "Electronic structure of molecules and materials", "correct": false},
+        {"id": "c", "text": "Climate and weather modeling", "correct": true},
+        {"id": "d", "text": "Structural mechanics", "correct": true},
+        {"id": "e", "text": "Quantum dynamics and condensed-matter physics", "correct": false}
+      ],
+      "explanation": "Most of today's scientific computing portfolio is outside the reach of QPUs, and classical CPUs and GPUs remain the right tools. Electronic structure and quantum dynamics are the paper's strong candidates.",
+      "quote": "For most of today's scientific computing portfolio, including computational fluid dynamics, climate and weather modeling, structural mechanics, and classical molecular dynamics, QPUs are not a practical consideration on any planning horizon visible today.",
+      "location": "2 Where Quantum Processors Fit in Scientific Computing (p. 2)"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "theme": "The GPU offload model",
+      "prompt": "In the familiar GPU offload model, what happens if the host is slow to respond?",
+      "choices": [
+        {"id": "a", "text": "The results become unreliable and must be recomputed", "correct": false},
+        {"id": "b", "text": "Running time grows exponentially as a backlog builds", "correct": false},
+        {"id": "c", "text": "The device sits idle and throughput suffers, but the results are still correct", "correct": true},
+        {"id": "d", "text": "The kernel aborts and must be relaunched", "correct": false}
+      ],
+      "explanation": "Once a GPU kernel is running it needs nothing further from the host to produce a correct answer, which is why the paper compares a GPU to an inherently stable airliner. Exponential slowdown from a backlog is the QPU failure mode.",
+      "quote": "If the host is slow to respond, the device sits idle and throughput suffers, but the results it produces are still correct.",
+      "location": "3 The Familiar Model: Accelerators as Offload Engines (p. 3)"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "theme": "The fighter-aircraft analogy",
+      "prompt": "Which aircraft does the paper say a QPU most resembles?",
+      "choices": [
+        {"id": "a", "text": "An unstable fighter that needs a flight control computer making continuous corrections", "correct": true},
+        {"id": "b", "text": "A stable airliner that keeps flying straight and level if the pilot lets go", "correct": false},
+        {"id": "c", "text": "A glider that needs no power once it is aloft", "correct": false},
+        {"id": "d", "text": "A drone flown entirely from a remote ground station", "correct": false}
+      ],
+      "explanation": "Like a fighter designed to be unstable, a QPU cannot stay on course by itself; the classical system must keep correcting it. The stable airliner is the paper's picture of a GPU.",
+      "quote": "A QPU is much closer to the fighter than to the airliner.",
+      "location": "4 A Device That Cannot Fly Itself (p. 3)"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "theme": "Why error correction is required",
+      "prompt": "Why does useful quantum computation require quantum error correction?",
+      "choices": [
+        {"id": "a", "text": "Classical decoders introduce errors that must be removed", "correct": false},
+        {"id": "b", "text": "Measuring a qubit always destroys the whole computation", "correct": false},
+        {"id": "c", "text": "QPUs cannot be shielded from the heat of nearby GPUs", "correct": false},
+        {"id": "d", "text": "The best two-qubit operations fail roughly once in a few hundred to a thousand attempts", "correct": true}
+      ],
+      "explanation": "Useful scientific computations will need billions of operations or more, far beyond what such error rates allow. Error correction closes the gap by encoding one reliable logical qubit across many physical qubits.",
+      "quote": "Across the leading qubit technologies, the best two-qubit operations now fail roughly once in every few hundred to a thousand attempts",
+      "location": "4 A Device That Cannot Fly Itself (p. 3)"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "theme": "Syndrome measurements and decoding",
+      "prompt": "What do syndrome measurements do in quantum error correction?",
+      "choices": [
+        {"id": "a", "text": "They read out the final answer of the computation", "correct": false},
+        {"id": "b", "text": "They reveal errors without disturbing the encoded information", "correct": true},
+        {"id": "c", "text": "They apply corrections directly to each physical qubit", "correct": false},
+        {"id": "d", "text": "They copy the quantum state to classical memory as a backup", "correct": false}
+      ],
+      "explanation": "The device repeatedly runs these checks, and a classical decoder interprets each round to infer which errors occurred and what correction to apply. Applying corrections is the job of the decoder and controller, not the measurement.",
+      "quote": "The device repeatedly measures a set of checks across its physical qubits, called syndrome measurements, which reveal errors without disturbing the encoded information.",
+      "location": "4 A Device That Cannot Fly Itself (p. 4)"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "theme": "The backlog problem",
+      "prompt": "What happens if the classical decoder cannot keep up with the quantum device?",
+      "choices": [
+        {"id": "a", "text": "The device idles, but its results remain correct", "correct": false},
+        {"id": "b", "text": "The QPU switches to a slower, error-free mode", "correct": false},
+        {"id": "c", "text": "Unprocessed syndrome data accumulates, delays compound, and runtime can grow exponentially", "correct": true},
+        {"id": "d", "text": "The computation finishes on time but with lower precision", "correct": false}
+      ],
+      "explanation": "Some logical operations cannot proceed until the decoder answers, so a backlog forces each dependent step to wait. Idling with correct results is the GPU case, which is the contrast the paper draws.",
+      "quote": "Because each dependent step must wait for the backlog to clear, delays compound, and runtime can grow exponentially with the number of such steps.",
+      "location": "4 A Device That Cannot Fly Itself (p. 4)"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "theme": "Layers of classical control",
+      "prompt": "The classical side of a quantum system is a stack of layers on different timescales. What do the inner layers demand?",
+      "choices": [
+        {"id": "a", "text": "Remote access through job submission, like other HPC resources", "correct": false},
+        {"id": "b", "text": "Only occasional host attention, as with a GPU kernel", "correct": false},
+        {"id": "c", "text": "Large shared-memory nodes in a separate data center", "correct": false},
+        {"id": "d", "text": "Deterministic, low-latency classical computing physically close to the quantum device", "correct": true}
+      ],
+      "explanation": "Pulse generation, readout, and real-time decoding run on nanosecond and microsecond deadlines. Only the outermost layer resembles the accelerator model, and remote access can serve only the outer layers.",
+      "quote": "The inner layers demand deterministic, low-latency classical computing physically close to the quantum device.",
+      "location": "5 Layers of Classical Control (p. 4)"
+    },
+    {
+      "id": "q9",
+      "type": "single",
+      "theme": "A reversal in the role of GPUs",
+      "prompt": "What \"interesting reversal\" does the paper point out about GPUs?",
+      "choices": [
+        {"id": "a", "text": "QPUs are likely to replace GPUs as the main accelerator in HPC nodes", "correct": false},
+        {"id": "b", "text": "GPUs may find a growing role inside the quantum control system, serving the QPU", "correct": true},
+        {"id": "c", "text": "GPU programming models already support hard real-time co-execution with QPUs", "correct": false},
+        {"id": "d", "text": "GPUs are becoming too slow to host quantum workloads", "correct": false}
+      ],
+      "explanation": "The device that defined the offload model may end up working for the QPU, for example running decoders. The paper also notes that today's GPU programming models were built for handing work off, not hard real-time co-execution.",
+      "quote": "The device that defined the offload model may find a growing role inside the quantum control system, serving the QPU rather than the other way around.",
+      "location": "6 Implications and Outlook (p. 5)"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "theme": "A classical systems problem",
+      "prompt": "What is the paper's main conclusion for system architects and facility planners?",
+      "choices": [
+        {"id": "a", "text": "A QPU can be integrated as one more accelerator in the node, with a thin driver layer", "correct": false},
+        {"id": "b", "text": "Quantum devices should be reached only remotely, away from HPC systems", "correct": false},
+        {"id": "c", "text": "Integrating quantum computing into HPC is as much a classical systems problem as a quantum one", "correct": true},
+        {"id": "d", "text": "Facilities should wait until qubit error rates fall before planning any integration", "correct": false}
+      ],
+      "explanation": "The classical system around a QPU is a substantial, specialized computing system that must scale with the device. The paper explicitly rejects the thin-driver picture, which is the near-miss here.",
+      "quote": "What seems clear is that integrating quantum computing into HPC is as much a classical systems problem as a quantum one",
+      "location": "6 Implications and Outlook (p. 6)"
+    }
+  ]
+}
